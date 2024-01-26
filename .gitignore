@@ -1,0 +1,17 @@
+docs/
+docs_es/
+
+# python
+*.pyc
+.pytest_cache/
+
+# build
+build/
+dist/
+*.egg-info/
+
+# vscode
+.vscode/
+
+# wandb
+wandb/

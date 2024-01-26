@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[project]
+name = "wandbize"
+dynamic = ["version"]
+description = "Launch nay script with W&B"
+readme = "README.md" # Assuming you have a README.md file
+requires-python = ">=3.9"
+authors = [{name = "Thomas Capelle", email = "tcapelle@pm.me"}]
+license = {file = "LICENSE"} # Assuming you have a LICENSE file
+keywords = ["artificial intelligence", "generative models", "natural language processing", "wandb"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "wandb",
+    "simple_parsing",
+]
+
+[project.urls]
+homepage = "https://github.com/tcapelle/wandbize"
+
+[project.scripts]
+"wandbize" = "wandbize.launch"
